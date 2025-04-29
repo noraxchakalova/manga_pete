@@ -1,53 +1,49 @@
 import React from "react";
 
 const Hero = () => {
-    const handleSmoothScroll = (event) => {
-        event.preventDefault(); 
-        const targetElement = document.querySelector("#about-us");
-        if (targetElement) {
-            const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY; 
-            const offsetPosition = elementPosition - 120; 
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: "smooth", 
-            });
-        }
-    };
+  const handleSmoothScroll = (event) => {
+    event.preventDefault();
+    const targetElement = document.querySelector("#about-us");
+    if (targetElement) {
+      const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - 120;
+      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+    }
+  };
 
-    return (
-        <div className="">
-            <div className="relative w-full h-[100vh] overflow-hidden bg-cover bg-center" style={{ backgroundImage: "url('./hero.png')" }}>
-                <div className="absolute inset-0 bg-black opacity-50"></div>
-                <div
-                    className="relative w-full flex gap-[32px] h-full text-white px-4 lg:px-24 mx-auto items-center"
-                    style={{ zIndex: "9" }}
-                >
-                    <div>
-                        <div className="md:w-[70%] w-full">
-                            <h1 className="lg:text-[61px] lg:leading-[72px] font-bold md:text-[39px] md:leading-[50px] text-[44.25px] leading-[45px] text-left">
-                            Welcome to <span className="text-blue-600 underline">manga_pete's</span> Portfolio
-                            </h1>
-                        </div>
-                        <div className="flex gap-3 mt-8 md:gap-6">
-                            <a
-                                href="/portfolio"
-                                className="flex items-center justify-center gap-2 p-[10px_24px] rounded-[6px] bg-white text-black hover:bg-transparent hover:text-white font-medium transition-all duration-300 ease-in-out border-1 border-white"
-                            >
-                                View Portfolio 
-                            </a>
-                            <a
-                                href="/aboutme"
-                                className="flex border-1 border-white items-center justify-center gap-2 p-[10px_24px] rounded-[6px] bg-transparent text-white hover:bg-white hover:text-black font-medium transition-all duration-300 ease-in-out"
-                                onClick={handleSmoothScroll} 
-                            >
-                                About Me
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  return (
+    <section className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: "url('./hero.png')" }}>
+      {/* Dark gradient overlay for readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
+
+      <div className="relative z-10 container mx-auto px-4 lg:px-24 h-full flex flex-col justify-center">
+        <div className="max-w-2xl">
+          <h1 className="text-white font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
+            Welcome to <span className="text-blue-500 underline">manga_pete&apos;s</span> Portfolio
+          </h1>
+          <p className="mt-4 text-gray-200 text-base sm:text-lg md:text-xl">
+            Dive into my creative world of manga art, stories, and inspirations.
+          </p>
+
+          <div className="mt-8 flex flex-wrap gap-4">
+            <a
+              href="/portfolio"
+              className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-md shadow-md transition-colors duration-200"
+            >
+              View Portfolio
+            </a>
+            <a
+              href="/aboutme"
+              onClick={handleSmoothScroll}
+              className="px-6 py-3 border-2 border-white text-white hover:bg-white hover:text-black font-semibold rounded-md transition-all duration-200"
+            >
+              About Me
+            </a>
+          </div>
         </div>
-    );
+      </div>
+    </section>
+  );
 };
 
 export default Hero;
