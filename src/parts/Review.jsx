@@ -33,12 +33,12 @@ const Review = () => {
             <FaStarHalfAlt className="mx-1 text-2xl" />
           </div>
           <p className="mb-6 text-gray-700 text-lg leading-relaxed">
-            “Amazing art and character designs 🤌. Awesome work—keep it up 👏👏👏”
+            “I see you got tricks up you're sleeve Good stuff”
           </p>
           <div className="flex items-center justify-center">
             <img
-              src="./rev.jpg"
-              alt="Ruthless Render"
+              src="./kongo.jpg"
+              alt="jonathan_Maz243"
               className="w-16 h-16 rounded-full border-2 border-gray-200 mr-4"
             />
             <div className="text-left">
