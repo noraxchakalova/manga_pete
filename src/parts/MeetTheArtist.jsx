@@ -36,13 +36,13 @@ const MeetTheArtist = () => {
             <h3 className="text-2xl font-bold">
               {inView && <CountUp end={250} duration={2} />} fans
             </h3>
-            <p className='text-[14px]'>Join a growing community of over 100 fans who appreciate the artistry and storytelling of MangaMasterpiece.</p>
+            <p className='text-[14px]'>Join a growing community of over 250 fans who appreciate the artistry and storytelling of my work.</p>
           </div>
           <div>
             <h3 className="text-2xl font-bold">
               {inView && <CountUp end={30} duration={2} />} collaborations
             </h3>
-            <p className='text-[14px]'>Collaborate with Chakarov on exciting projects, as the artist is open to new ideas and partnerships in the manga world.</p>
+            <p className='text-[14px]'>Collaborate with me on exciting projects, I am open to both partnerships and commissions!</p>
           </div>
         </div>
       </div>
