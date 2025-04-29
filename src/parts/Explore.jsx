@@ -15,7 +15,7 @@ const Explore = () => {
   return (
     <section
       className="relative bg-fixed bg-center bg-cover"
-      style={{ backgroundImage: "url('./cool-banner.jpg')" }}
+      style={{ backgroundImage: "url('./cool-banner.png')" }}
     >
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/60"></div>
