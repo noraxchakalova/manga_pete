@@ -4,21 +4,28 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 const FindMe = () => {
   return (
     <section className="bg-black text-white py-12">
-      <div className=" mx-auto px-4 lg:px-24">
+      <div className="mx-auto px-4 lg:px-24">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
           <div className="text-center lg:text-left mb-8 lg:mb-0">
             <div className='flex lg:justify-start items-center justify-center'>
-            <FaEnvelope className="text-white text-4xl mb-2" />
+              <FaEnvelope className="text-white text-4xl mb-2" />
             </div>
             <h3 className="text-2xl font-bold">Email Us</h3>
-            <p className='text-white text-[12px]'>For inquiries, collaborations, or just to say hello, feel free to reach out via email at <a href="mailto:" className="text-blue-500">pvchakarov@gmail.com</p>
+            <p className='text-white text-[12px]'>
+              For inquiries, collaborations, or just to say hello, feel free to reach out via email at 
+              <a href="mailto:pvchakarov@gmail.com" className="text-blue-500">
+                pvchakarov@gmail.com
+              </a>
+            </p>
           </div>
           <div className="text-center lg:text-left">
             <div className='flex items-center justify-center lg:justify-start'>
-            <FaMapMarkerAlt className="text-white text-4xl mb-2" />
+              <FaMapMarkerAlt className="text-white text-4xl mb-2" />
             </div>
             <h3 className="text-2xl font-bold">Visit Us</h3>
-            <p className='text-white text-[12px]'>If you're in the area, feel free to visit us at our studio located at <strong>Shibuya 1-1-1, Tokyo, Japan</strong>. We welcome fans and collaborators alike!</p>
+            <p className='text-white text-[12px]'>
+              If you're in the area, feel free to visit us at our studio located at <strong>Shibuya 1-1-1, Tokyo, Japan</strong>. We welcome fans and collaborators alike!
+            </p>
           </div>
         </div>
         <div className="mt-8">
