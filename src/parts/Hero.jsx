@@ -19,7 +19,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 lg:px-24 h-full flex flex-col justify-center">
         <div className="max-w-2xl">
           <h1 className="text-white font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
-            Welcome to <span className="text-coral ">manga_pete&apos;s</span> Portfolio
+            Welcome to <span className="text-[#ED6665] ">manga_pete&apos;s</span> Portfolio
           </h1>
           <p className="mt-4 text-gray-200 text-base sm:text-lg md:text-xl">
             Dive into my creative world of manga art, stories, and inspirations.
@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="/portfolio"
-              className="px-6 py-3 ./src/parts/Hero.jsx hover:bg-coral text-white font-semibold rounded-md shadow-md transition-colors duration-200"
+              className="px-6 py-3 ./src/parts/Hero.jsx bg-[#ED6665] hover:bg-[#D45553] text-white font-semibold rounded-md shadow-md transition-colors duration-200"
             >
               View Portfolio
             </a>
