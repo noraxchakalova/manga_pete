@@ -7,8 +7,8 @@ const Review = () => {
         <h2 className="text-4xl font-bold mb-4">Connect with Me Online</h2>
         <p className="mb-8">Follow my artistic journey on social media to stay updated on new releases, events, and behind-the-scenes content. Join the community!</p>
         <div className="flex justify-center gap-4 mb-12">
-          <a href='/aboutme' className="bg-blue-500 text-white px-6 py-2 rounded">Follow Now</a>
-          <a href='/portfolio' className="border border-blue-500 text-blue-500 px-6 py-2 rounded">Learn More</a>
+          <a href='/contact' className="bg-blue-500 text-white px-6 py-2 rounded">Follow Now</a>
+          <a href='/aboutme' className="border border-blue-500 text-blue-500 px-6 py-2 rounded">Learn More</a>
         </div>
         <div className="p-8">
           <div className="flex justify-center mb-4">
