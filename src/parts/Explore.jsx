@@ -1,40 +1,53 @@
-import React from 'react';
+import React from "react";
 
 const Explore = () => {
-    const handleSmoothScroll = (event) => {
-        event.preventDefault(); 
-        const targetElement = document.querySelector("#about-us");
-        if (targetElement) {
-            const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY; 
-            const offsetPosition = elementPosition - 120; 
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: "smooth", 
-            });
-        }
-    };
-  return (
-    <section className="relative px-4 lg:px-24 py-12 bg-cover bg-center text-white" style={{ backgroundImage: "url('./2.jpg')", backgroundColor: 'rgba(0, 0, 0, 0.5)', backgroundBlendMode: 'overlay' }}>
-      <h1 className='text-center text-6xl font-bold'>Explore My Manga Collection</h1>
-      <p className="mb-8 text-center text-2xl">Dive into my artistic world and read my latest mangas online. Each story is crafted with passion and creativity, waiting for you to discover.</p>
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
-      <a
-                                href="/portfolio"
-                                className="flex items-center justify-center gap-2 p-[10px_24px] rounded-[6px] bg-white text-black hover:bg-transparent hover:text-white font-medium transition-all duration-300 ease-in-out border-1 border-white"
-                            >
-                                View Portfolio 
-                            </a>
-                            <a
-                                href="https://medibang.com/mpc/authors/26956722/"
-                                className="flex border-1 border-white items-center justify-center gap-2 p-[10px_24px] rounded-[6px] bg-transparent text-white hover:bg-white hover:text-black font-medium transition-all duration-300 ease-in-out"
-                                onClick={handleSmoothScroll} 
-                            >
-                                Read Now
-                            </a>
+  const handleSmoothScroll = (event) => {
+    event.preventDefault();
+    const targetElement = document.querySelector("#about-us");
+    if (targetElement) {
+      const elementPosition =
+        targetElement.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - 120;
+      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+    }
+  };
 
+  return (
+    <section
+      className="relative bg-fixed bg-center bg-cover"
+      style={{ backgroundImage: "url('./2.jpg')" }}
+    >
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
+
+      <div className="relative z-10 max-w-4xl mx-auto text-center px-4 py-24">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white">
+          Explore My <span className="text-blue-500">Manga Collection</span>
+        </h2>
+        <p className="mt-4 text-white/80 text-lg sm:text-xl">
+          Dive into my artistic world and read my latest mangas online. Each story is
+          crafted with passion and creativity, waiting for you to discover.
+        </p>
+
+        <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="/portfolio"
+            className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-md shadow-md transition-colors duration-200"
+          >
+            View Portfolio
+          </a>
+          <a
+            href="https://medibang.com/mpc/authors/26956722/"
+            onClick={handleSmoothScroll}
+            className="px-6 py-3 bg-transparent border-2 border-white text-white font-medium rounded-md hover:bg-white hover:text-black transition-all duration-200"
+          >
+            Read Now
+          </a>
+        </div>
       </div>
     </section>
   );
 };
 
 export default Explore;
+
