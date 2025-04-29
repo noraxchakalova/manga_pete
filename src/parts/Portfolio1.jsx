@@ -1,35 +1,109 @@
 import React from 'react';
 import { FaHashtag } from 'react-icons/fa';
 
-const Portfolio1 = () => {
+const portfolioData = {
+  mangas: [
+    {
+      title: 'Heartless',
+      genres: 'Action, Horror',
+      image: './heartless.webp',
+      link: '#',
+      tags: ['Heartless', 'DarkFantasy'],
+    },
+    {
+      title: 'Bloody Chains',
+      genres: 'Action, Sci-Fi',
+      image: './bloody-chains.webp',
+      link: '#',
+      tags: ['BloodyChains', 'SciFiThriller'],
+    },
+  ],
+  oneshots: [
+    {
+      title: 'Midnight Sketch',
+      genres: 'Mystery, Drama',
+      image: './midnight-sketch.webp',
+      link: '#',
+      tags: ['OneShot', 'Sketch'],
+    },
+    {
+      title: 'Starfall',
+      genres: 'Fantasy, Romance',
+      image: './starfall.webp',
+      link: '#',
+      tags: ['Romance', 'OneShot'],
+    },
+  ],
+  fanart: [
+    {
+      title: 'Naruto Tribute',
+      genres: 'Fanart',
+      image: './naruto-tribute.webp',
+      link: '#',
+      tags: ['Naruto', 'Fanart'],
+    },
+    {
+      title: 'Spirited Away Tribute',
+      genres: 'Fanart',
+      image: './spirited-away.webp',
+      link: '#',
+      tags: ['Ghibli', 'Fanart'],
+    },
+  ],
+};
+
+const Portfolio = () => {
   return (
-    <section className="portfolio-section mt-30 px-8 lg:px-24 py-12">
-        <div className="flex items-center justify-center">
-        <img src="./port.webp" alt="Manga Collection" className="w-[800px] h-auto rounded-lg shadow-lg mb-8" />
-        </div>
-        <div className="flex flex-col lg:flex-row items-center gap-10">
-            <div className='lg:w-1/2'>
-                <h1 className="text-4xl font-bold mb-4 text-left text-black">Explore My Manga</h1>
-                <p className="mb-8 text-black text-left text-lg">Dive into my captivating stories and stunning artwork. Each manga is a journey waiting for you to discover. Click to read online!</p>
-                <p className="mb-4 text-[14px]"><FaHashtag className="inline text-black" /> Heartless <FaHashtag className="inline text-black" /> Bloody Chains </p>
+    <section className="bg-gray-50 py-16">
+      <div className="container mx-auto px-4 lg:px-24">
+        <h2 className="text-5xl font-extrabold text-gray-800 mb-12 text-center">
+          My Portfolio
+        </h2>
+
+        {Object.entries(portfolioData).map(([section, items]) => (
+          <div key={section} className="mb-16">
+            <h3 className="text-3xl font-bold text-gray-900 mb-6 capitalize">
+              {section}
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {items.map((item) => (
+                <div
+                  key={item.title}
+                  className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
+                >
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-48 object-cover rounded-md mb-4"
+                  />
+                  <h4 className="text-2xl font-semibold text-gray-800 mb-2">
+                    {item.title}
+                  </h4>
+                  <p className="text-sm text-gray-600 mb-4">{item.genres}</p>
+                  <a
+                    href={item.link}
+                    className="inline-block text-blue-600 hover:underline"
+                  >
+                    Read Now
+                  </a>
+                  <div className="mt-4">
+                    {item.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="inline-flex items-center mr-2 text-gray-500 text-xs"
+                      >
+                        <FaHashtag className="mr-1" /> {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
-            <div className="grid grid-cols-2 lg:grid-cols-2 md:grid-cols-2 gap-10 text-black text-left text-lg">
-                <div>
-                <h3 className="text-2xl font-bold">Heartless</h3>
-                <p>Action, Horror</p>
-                </div>
-                <div>
-                <h3 className="text-2xl font-bold">Bloody Chains</h3>
-                <p>Action, Sci-Fi</p>
-                </div>
-                <div>
-                <h3 className="text-2xl font-bold">Read Online</h3>
-                <p>Enjoy the journey!</p>
-                </div>
-            </div>
-        </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
 
-export default Portfolio1;
+export default Portfolio;
