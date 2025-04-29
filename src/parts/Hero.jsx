@@ -23,8 +23,8 @@ const Hero = () => {
         <div className="max-w-lg">
           <h1 className="text-white font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-snug">
             Welcome to{' '}
-            <span className="text-amber-400 underline decoration-2">
-              manga_pete&apos;s
+            <span className="text-blue-500 underline decoration-2">
+              manga pete&apos;s
             </span>{' '}
             Portfolio
           </h1>
@@ -35,7 +35,7 @@ const Hero = () => {
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="/portfolio"
-              className="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"
+              className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"
             >
               View Portfolio
             </a>
