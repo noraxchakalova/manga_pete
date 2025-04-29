@@ -57,10 +57,11 @@ const Portfolio = () => {
                   key={item.title}
                   className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
                 >
+                  {/* Use full-width responsive images without cropping */}
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-48 object-cover rounded-md mb-4"
+                    className="w-full h-auto rounded-md mb-4"
                   />
                   <h4 className="text-2xl font-semibold text-gray-800 mb-2">
                     {item.title}
