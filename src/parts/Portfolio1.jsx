@@ -15,7 +15,7 @@ const portfolioData = {
     {
       title: 'Bloody Chains',
       genres: 'Action, Sci-Fi',
-      image: './bloody-chains.png',
+      image: './bloodychains.png',
       link: '#',
       tags: ['BloodyChains', 'SciFiThriller'],
     },
