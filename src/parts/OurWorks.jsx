@@ -4,7 +4,7 @@ import { FaHashtag } from 'react-icons/fa';
 const works = [
   {
     title: 'Heartless',
-    description: `A small group of people are trapped in a destroyed city surrounded by enormous crystals. The only way for them to get rations is the "packages" dropped by planes, rarely flying overhead. Dr. Akira and his son Ray fight to survive in this harsh world and uncover a way out of their nightmare.`,
+    description: `A small group of people are trapped in a destroyed city surrounded by enormous crystals. The only way for them to get rations is the "packages" dropped by planes. Dr. Akira and his son Ray fight to survive and uncover a way out of their nightmare.`,
     genres: ['Action', 'Horror'],
     release: '2025-02-15',
     image: './heartless.png',
@@ -12,7 +12,7 @@ const works = [
   },
   {
     title: 'Bloody Chains',
-    description: `In a distant realm, a man and a girl wage a deadly battle. Giving it all they have, their fates entwine in a twist that reveals more than just survival.`,
+    description: `In a distant realm, a man and a girl wage a deadly battle. Their fates entwine in a twist that reveals more than just survival.`,
     genres: ['Action', 'Sci-Fi'],
     release: '2025-01-15',
     image: './bloodychains.png',
@@ -21,40 +21,40 @@ const works = [
 ];
 
 const OurWorks = () => (
-  <section className="bg-gray-50 py-16 px-4 lg:px-24">
-    <div className="max-w-4xl mx-auto text-center mb-12">
-      <h2 className="text-3xl text-gray-700 uppercase tracking-wide">
+  <section className="bg-gray-50 py-12 px-4 lg:px-20">
+    <div className="max-w-3xl mx-auto text-center mb-8">
+      <h2 className="text-2xl text-gray-700 uppercase tracking-wider">
         My Works
       </h2>
-      <h1 className="text-5xl font-extrabold text-gray-900 mt-2">
+      <h1 className="text-4xl font-bold text-gray-900 mt-2">
         Explore the Collection
       </h1>
-      <p className="mt-4 text-gray-600">
+      <p className="mt-3 text-gray-600 text-base">
         Dive into captivating manga stories that reflect creativity and passion.
       </p>
     </div>
 
-    <div className="space-y-16">
+    <div className="space-y-12">
       {works.map((work, idx) => (
         <div
           key={work.title}
-          className={`grid gap-8 items-center lg:grid-cols-2 ${idx % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
+          className={`grid gap-6 items-center lg:grid-cols-2 ${idx % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
         >
-          <div>
+          <div className="flex justify-center">
             <img
               src={work.image}
               alt={work.title}
-              className="w-full rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+              className="w-full max-w-xs rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
             />
           </div>
           <div>
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-2">
               {work.title}
             </h3>
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-gray-700 mb-4 text-sm leading-normal">
               {work.description}
             </p>
-            <div className="flex flex-wrap gap-4 items-center mb-6 text-sm text-gray-500">
+            <div className="flex flex-wrap gap-3 items-center mb-4 text-xs text-gray-500">
               <span>
                 <FaHashtag className="inline mr-1" />
                 {work.genres.join(', ')}
@@ -68,7 +68,7 @@ const OurWorks = () => (
               href={work.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition-colors duration-200"
+              className="inline-block bg-blue-600 text-white font-medium px-4 py-2 rounded-md shadow-sm hover:bg-blue-700 transition-colors duration-150 text-sm"
             >
               View Project ➔
             </a>
