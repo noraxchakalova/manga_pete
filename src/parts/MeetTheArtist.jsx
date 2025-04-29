@@ -16,7 +16,7 @@ const MeetTheArtist = () => {
       <div className="lg:w-1/2">
         <h2 className="text-4xl font-bold mb-4 text-left text-black">Meet the Artist</h2>
         <p className="mb-8 text-black text-left text-[18px]">
-          Hi I'm up-and-coming manga artist!
+          Hi, My name is Pete,  I'm an up-and-coming manga artist!
           Thank you so much if you read any of my works it means the world to me
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-black text-left text-[18px]">

@@ -11,7 +11,7 @@ const Contact = () => {
             <FaEnvelope className="text-black text-4xl mb-2" />
             </div>
             <h3 className="text-2xl font-bold">Email Us</h3>
-            <p className='text-black text-[12px]'>For inquiries, collaborations, or just to say hello, feel free to reach out via email at <a href="mailto:contact@manga_pete" className="text-blue-500">contact@manga_pete</a>. We love hearing from our fans!</p>
+            <p className='text-black text-[12px]'>For inquiries, collaborations, or just to say hello, feel free to reach out via email at <a href="mailto:" className="text-blue-500">pvchakarov@gmail.com</a>.</p>
           </div>
           <div className="text-center lg:text-left mb-8 lg:mb-0">
             <div className='flex items-center justify-center lg:justify-start'>

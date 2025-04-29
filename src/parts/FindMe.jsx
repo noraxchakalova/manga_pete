@@ -11,14 +11,7 @@ const FindMe = () => {
             <FaEnvelope className="text-white text-4xl mb-2" />
             </div>
             <h3 className="text-2xl font-bold">Email Us</h3>
-            <p className='text-white text-[12px]'>For inquiries, collaborations, or just to say hello, feel free to reach out via email at <a href="mailto:contact@manga_pete" className="text-blue-500">contact@manga_pete</a>. We love hearing from our fans!</p>
-          </div>
-          <div className="text-center lg:text-left mb-8 lg:mb-0">
-            <div className='flex items-center justify-center lg:justify-start'>
-            <FaPhone className="text-white text-4xl mb-2" />
-            </div>
-            <h3 className="text-2xl font-bold">Call Us</h3>
-            <p className='text-white text-[12px]'>If you prefer to speak directly, you can call us at <strong>+1 (555) 123-4567</strong>. We're available for calls during business hours.</p>
+            <p className='text-white text-[12px]'>For inquiries, collaborations, or just to say hello, feel free to reach out via email at <a href="mailto:" className="text-blue-500">pvchakarov@gmail.com</p>
           </div>
           <div className="text-center lg:text-left">
             <div className='flex items-center justify-center lg:justify-start'>
