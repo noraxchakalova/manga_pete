@@ -18,25 +18,25 @@ const ArtisticJourney = () => {
           <div className="grid grid-cols-2 gap-8 text-black text-left text-[18px]">
             <div>
               <h3 className="text-2xl font-bold">
-                {inView && <CountUp end={150} duration={2} />} works
+                {inView && <CountUp end={2} duration={2} />} works
               </h3>
               <p className="text-[14px]">2 unique manga pieces created, each telling a different story, and counting.</p>
             </div>
             <div>
               <h3 className="text-2xl font-bold">
-                {inView && <CountUp end={10} duration={2} />} years
+                {inView && <CountUp end={5} duration={2} />} years
               </h3>
               <p className="text-[14px]">With over 5 years of experience, I continue honing my skills and developing a distinctive style.</p>
             </div>
             <div>
               <h3 className="text-2xl font-bold">
-                {inView && <CountUp end={100} duration={2} />} characters
+                {inView && <CountUp end={20} duration={2} />} characters
               </h3>
               <p className="text-[14px]">More than 20 characters brought to life, each with their own unique backstory.</p>
             </div>
             <div>
               <h3 className="text-2xl font-bold">
-                {inView && <CountUp end={5} duration={2} />} series
+                {inView && <CountUp end={3} duration={2} />} series
               </h3>
               <p className="text-[14px]">Currently working on 3 ongoing project, each exploring different themes and genres. So please stay tuned!</p>
             </div>
