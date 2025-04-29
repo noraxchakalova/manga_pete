@@ -12,13 +12,13 @@ const Review = () => {
         <div className="flex justify-center gap-6 mb-12">
           <a
             href="/contact"
-            className="px-6 py-3 bg-blue-500 text-white font-medium rounded-full shadow hover:bg-blue-600 transition-colors duration-200"
+            className="px-6 py-3 bg-[#ED6665] hover:bg-[#D45553] text-white font-medium rounded-full shadow  transition-colors duration-200"
           >
             Follow Now
           </a>
           <a
             href="/aboutme"
-            className="px-6 py-3 border-2 border-blue-500 text-blue-500 font-medium rounded-full hover:bg-blue-50 transition-colors duration-200"
+            className="px-6 py-3 border-2 border-[#ED6665] text-[#ED6665] font-medium rounded-full hover:bg-[#D45553] transition-colors duration-200"
           >
             Learn More
           </a>
