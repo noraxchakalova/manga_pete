@@ -16,7 +16,7 @@ const MeetTheArtist = () => {
       <div className="lg:w-1/2">
         <h2 className="text-4xl font-bold mb-4 text-left text-black">Meet the Artist</h2>
           <p className="mb-8 text-black text-left text-[18px] leading-relaxed">
-                Hi, my name is <span className="font-semibold text-indigo-600">Pete</span>. I'm an up-and-coming manga artist!
+                Hi, my name is <span className="font-semibold text-[#ED6665]">Pete</span>. I'm an up-and-coming manga artist!
                 <br />
                 <br />
                 Thank you so much for reading any of my works — it truly means the world to me.
