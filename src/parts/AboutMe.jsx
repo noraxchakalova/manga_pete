@@ -6,14 +6,14 @@ const About = () => {
       <div className="container mx-auto px-4 lg:px-24 flex flex-col lg:flex-row items-center gap-12">
         <div className="lg:w-1/2 text-center lg:text-left">
           <h2 className="text-5xl font-extrabold mb-4 text-gray-800">
-            Explore My <span className="text-blue-600 underline">Artistic Journey</span>
+            Explore My <span className="text-[#ED6665] underline">Artistic Journey</span>
           </h2>
           <p className="text-lg text-gray-600 mb-6">
             Join me as I share my experiences and the inspirations that have shaped my artistic path. From my early days of sketching to the creation of my unique manga style, every moment has been a stepping stone in my journey.
           </p>
           <a
             href="#portfolio"
-            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition-colors duration-200"
+            className="inline-block bg-[#ED6665] hover:bg-[#D45553]text-white px-6 py-3 rounded-lg shadow transition-colors duration-200"
           >
             View Portfolio
           </a>

@@ -13,7 +13,7 @@ const ArtisticJourney = () => {
       <div className="flex flex-col lg:flex-row items-center gap-10">
         <img src="./pete-at-work.png" alt="Artistic Journey" className="w-[500px] lg:w-1/2 h-auto rounded-lg shadow-lg mb-8" />
         <div className="lg:w-1/2">
-          <h1 className="text-4xl font-bold mb-4 text-left text-black">Discover the <span className="text-blue-600 underline">Artistic Journey</span></h1>
+          <h1 className="text-4xl font-bold mb-4 text-left text-black">Discover the <span className="text-[#ED6665] underline">Artistic Journey</span></h1>
           <p className="mb-8 text-black text-left text-[18px]">My creative process is a blend of inspiration and technique. I draw from personal experiences and cultural influences, crafting stories that resonate deeply with my readers. Each piece reflects a unique style that evolves with every project.</p>
           <div className="grid grid-cols-2 gap-8 text-black text-left text-[18px]">
             <div>
