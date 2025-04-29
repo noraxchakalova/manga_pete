@@ -25,11 +25,8 @@ const Hero = () => {
                     <div>
                         <div className="md:w-[70%] w-full">
                             <h1 className="lg:text-[61px] lg:leading-[72px] font-bold md:text-[39px] md:leading-[50px] text-[44.25px] leading-[45px] text-left">
-                            Welcome to <span className="text-blue-600 underline">manga_pete</span> Portfolio
+                            Welcome to <span className="text-blue-600 underline">manga_pete's</span> Portfolio
                             </h1>
-                            <p className="mt-4 text-[22px] font-normal leading-[24px] md:w-[80%] w-full text-left">
-                            Explore the captivating world of manga art with MangaMasterpiece. Dive into a collection of unique stories and stunning visuals crafted with passion and creativity. Discover the art.
-                            </p>
                         </div>
                         <div className="flex gap-3 mt-8 md:gap-6">
                             <a
