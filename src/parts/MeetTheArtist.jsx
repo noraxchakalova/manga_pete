@@ -40,7 +40,7 @@ const MeetTheArtist = () => {
           </div>
           <div>
             <h3 className="text-2xl font-bold">
-              {inView && <CountUp end={30} duration={2} />} collaborations
+              Open to collaborations
             </h3>
             <p className='text-[14px]'>Collaborate with me on exciting projects, I am open to both partnerships and commissions!</p>
           </div>
