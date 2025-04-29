@@ -31,7 +31,7 @@ const FindMe = () => {
         <div className="mt-8">
           <iframe
             title="Google Maps Location"
-            src="https://www.google.com/maps/place/TrakataPrimorski,+ul.+%2213-ta%22/@43.227084,27.9896172,17z/data=!3m1!4b1!4m6!3m5!1s0x40a4566051f8a26f:0xd6bcbf4e6cdeed0f!8m2!3d43.227084!4d27.9921921!16s%2Fg%2F11z5sf1yw?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D"
+            src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.161000508127!2d27.989617176351757!3d43.227083971125474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a4566051f8a26f%3A0xd6bcbf4e6cdeed0f!2sTrakataPrimorski%2C%20ul.%20%2213-ta%22!5e0!3m2!1sen!2sbg!4v1745953174718!5m2!1sen!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             width="100%"
             height="450"
             allowFullScreen=""
