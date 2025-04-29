@@ -57,7 +57,6 @@ const Portfolio = () => {
                   key={item.title}
                   className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
                 >
-                  {/* Use full-width responsive images without cropping */}
                   <img
                     src={item.image}
                     alt={item.title}
@@ -69,9 +68,11 @@ const Portfolio = () => {
                   <p className="text-sm text-gray-600 mb-4">{item.genres}</p>
                   <a
                     href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block text-[#ED6665] hover:underline"
                   >
-                    Read Now
+                    {section === 'fanart' ? 'View Now' : 'Read Now'}
                   </a>
                   <div className="mt-4">
                     {item.tags.map((tag) => (
