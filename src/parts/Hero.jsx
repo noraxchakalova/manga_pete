@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="/portfolio"
-              className="px-6 py-3 ./src/parts/Hero.jsx hover:bg-blue-600 text-white font-semibold rounded-md shadow-md transition-colors duration-200"
+              className="px-6 py-3 ./src/parts/Hero.jsx hover:bg-coral text-white font-semibold rounded-md shadow-md transition-colors duration-200"
             >
               View Portfolio
             </a>
