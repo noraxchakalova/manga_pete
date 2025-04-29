@@ -1,82 +1,49 @@
-import React from 'react';
-import { FaHashtag } from 'react-icons/fa';
+import React from "react";
 
-const works = [
-  {
-    title: 'Heartless',
-    description: `A small group of people are trapped in a destroyed city surrounded by enormous crystals. The only way for them to get rations is the "packages" dropped by planes. Dr. Akira and his son Ray fight to survive and uncover a way out of their nightmare.`,
-    genres: ['Action', 'Horror'],
-    release: '2025-02-15',
-    image: './heartless.png',
-    link: 'https://medibang.com/mpc/episodes/n12502150022511520026956722/',
-  },
-  {
-    title: 'Bloody Chains',
-    description: `In a distant realm, a man and a girl wage a deadly battle. Their fates entwine in a twist that reveals more than just survival.`,
-    genres: ['Action', 'Sci-Fi'],
-    release: '2025-01-15',
-    image: './bloodychains.png',
-    link: 'https://medibang.com/mpc/episodes/v72501150235087370026956722/',
-  },
-];
+const Hero = () => {
+  const handleSmoothScroll = (event) => {
+    event.preventDefault();
+    const targetElement = document.querySelector("#about-us");
+    if (targetElement) {
+      const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - 120;
+      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+    }
+  };
 
-const OurWorks = () => (
-  <section className="bg-gray-50 py-12 px-4 lg:px-20">
-    <div className="max-w-3xl mx-auto text-center mb-8">
-      <h2 className="text-2xl text-gray-700 uppercase tracking-wider">
-        My Works
-      </h2>
-      <h1 className="text-4xl font-bold text-gray-900 mt-2">
-        Explore the Collection
-      </h1>
-      <p className="mt-3 text-gray-600 text-base">
-        Dive into captivating manga stories that reflect creativity and passion.
-      </p>
-    </div>
+  return (
+    <section className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: "url('./hero.png')" }}>
+      {/* Dark gradient overlay for readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
 
-    <div className="space-y-12">
-      {works.map((work, idx) => (
-        <div
-          key={work.title}
-          className={`grid gap-6 items-center lg:grid-cols-2 ${idx % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
-        >
-          <div className="flex justify-center">
-            <img
-              src={work.image}
-              alt={work.title}
-              className="w-full max-w-xs rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-          <div>
-            <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-              {work.title}
-            </h3>
-            <p className="text-gray-700 mb-4 text-sm leading-normal">
-              {work.description}
-            </p>
-            <div className="flex flex-wrap gap-3 items-center mb-4 text-xs text-gray-500">
-              <span>
-                <FaHashtag className="inline mr-1" />
-                {work.genres.join(', ')}
-              </span>
-              <span>
-                <FaHashtag className="inline mr-1" />
-                Released: {work.release}
-              </span>
-            </div>
+      <div className="relative z-10 container mx-auto px-4 lg:px-24 h-full flex flex-col justify-center">
+        <div className="max-w-2xl">
+          <h1 className="text-white font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
+            Welcome to <span className="text-blue-500 underline">manga_pete&apos;s</span> Portfolio
+          </h1>
+          <p className="mt-4 text-gray-200 text-base sm:text-lg md:text-xl">
+            Dive into my creative world of manga art, stories, and inspirations.
+          </p>
+
+          <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href={work.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-blue-600 text-white font-medium px-4 py-2 rounded-md shadow-sm hover:bg-blue-700 transition-colors duration-150 text-sm"
+              href="/portfolio"
+              className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-md shadow-md transition-colors duration-200"
             >
-              View Project ➔
+              View Portfolio
+            </a>
+            <a
+              href="/aboutme"
+              onClick={handleSmoothScroll}
+              className="px-6 py-3 border-2 border-white text-white hover:bg-white hover:text-black font-semibold rounded-md transition-all duration-200"
+            >
+              About Me
             </a>
           </div>
         </div>
-      ))}
-    </div>
-  </section>
-);
+      </div>
+    </section>
+  );
+};
 
-export default OurWorks;
+export default Hero;
