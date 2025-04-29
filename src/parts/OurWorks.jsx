@@ -68,7 +68,7 @@ const OurWorks = () => (
               href={work.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-blue-600 text-white font-medium px-4 py-2 rounded-md shadow-sm hover:bg-blue-700 transition-colors duration-150 text-sm"
+              className="inline-block bg-[#ED6665] hover:bg-[#D45553] text-white font-medium px-4 py-2 rounded-md shadow-sm transition-colors duration-150 text-sm"
             >
               View Project ➔
             </a>
