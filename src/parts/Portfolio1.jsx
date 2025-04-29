@@ -69,7 +69,7 @@ const Portfolio = () => {
                   <p className="text-sm text-gray-600 mb-4">{item.genres}</p>
                   <a
                     href={item.link}
-                    className="inline-block text-blue-600 hover:underline"
+                    className="inline-block text-[#ED6665] hover:underline"
                   >
                     Read Now
                   </a>
