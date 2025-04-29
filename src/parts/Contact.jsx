@@ -13,9 +13,9 @@ const Contact = () => {
             <h3 className="text-2xl font-bold">Email Me</h3>
             <p className='text-white text-[12px]'>
               For inquiries, collaborations, or just to say hello, feel free to reach out via email at 
-              <a href="mailto:pvchakarov@gmail.com" className="text-blue-500">
+               <a href="mailto:pvchakarov@gmail.com" className="text-blue-500">
                  pvchakarov@gmail.com
-              </a>
+               </a>
             </p>
           </div>
           <div className="text-center lg:text-left">
