@@ -22,7 +22,7 @@ const Explore = () => {
 
       <div className="relative z-10 max-w-4xl mx-auto text-center px-4 py-24">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white">
-          Explore My <span className="text-blue-500">Manga Collection</span>
+          Explore My <span className="text-[#ED6665]">Manga Collection</span>
         </h2>
         <p className="mt-4 text-white/80 text-lg sm:text-xl">
           Dive into my artistic world and read my latest mangas online. Each story is
@@ -32,7 +32,7 @@ const Explore = () => {
         <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
           <a
             href="/portfolio"
-            className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-md shadow-md transition-colors duration-200"
+            className="px-6 py-3 bg-blue-500 bg-[#ED6665] text-white font-medium rounded-md shadow-md transition-colors duration-200"
           >
             View Portfolio
           </a>
