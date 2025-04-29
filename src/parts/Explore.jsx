@@ -32,7 +32,7 @@ const Explore = () => {
         <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
           <a
             href="/portfolio"
-            className="px-6 py-3 bg-blue-500 bg-[#ED6665] text-white font-medium rounded-md shadow-md transition-colors duration-200"
+            className="px-6 py-3 bg-[#ED6665] text-white font-medium rounded-md shadow-md transition-colors duration-200"
           >
             View Portfolio
           </a>
