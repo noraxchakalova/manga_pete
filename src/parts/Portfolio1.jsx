@@ -31,7 +31,7 @@ const portfolioData = {
     {
       title: 'Cowboy Bebop Tribute',
       genres: 'Fanart',
-      image: './cowboybepop.png',
+      image: './cowboybebop.png',
       link: '#',
       tags: ['Cowboy Bebop', 'Fanart'],
     },
