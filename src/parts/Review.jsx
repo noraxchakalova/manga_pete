@@ -42,7 +42,7 @@ const Review = () => {
               className="w-16 h-16 rounded-full border-2 border-gray-200 mr-4"
             />
             <div className="text-left">
-              <p className="font-semibold text-gray-800 text-xl">Ruthless Render</p>
+              <p className="font-semibold text-gray-800 text-xl">jonathan_Maz243</p>
               <p className="text-gray-500">Manga Enthusiast</p>
             </div>
           </div>
