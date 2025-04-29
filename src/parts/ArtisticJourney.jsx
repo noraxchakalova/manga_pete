@@ -11,7 +11,7 @@ const ArtisticJourney = () => {
   return (
     <section ref={ref} className="artistic-journey-section lg:mt-40 mt-10 px-8 lg:px-24 py-12">
       <div className="flex flex-col lg:flex-row items-center gap-10">
-        <img src="./pete.HEIC" alt="Artistic Journey" className="w-[500px] lg:w-1/2 h-auto rounded-lg shadow-lg mb-8" />
+        <img src="./pete-at-work.png" alt="Artistic Journey" className="w-[500px] lg:w-1/2 h-auto rounded-lg shadow-lg mb-8" />
         <div className="lg:w-1/2">
           <h1 className="text-4xl font-bold mb-4 text-left text-black">Discover the <span className="text-blue-600 underline">Artistic Journey</span></h1>
           <p className="mb-8 text-black text-left text-[18px]">With manga_pete, the creative process is a blend of inspiration and technique. The artist draws from personal experiences and cultural influences, crafting stories that resonate deeply with readers. Each piece reflects a unique style that evolves with every project.</p>
