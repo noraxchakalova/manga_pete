@@ -14,7 +14,7 @@ const FindMe = () => {
             <p className='text-white text-[12px]'>
               For inquiries, collaborations, or just to say hello, feel free to reach out via email at 
               <a href="mailto:pvchakarov@gmail.com" className="text-blue-500">
-                pvchakarov@gmail.com
+                 pvchakarov@gmail.com
               </a>
             </p>
           </div>
@@ -22,7 +22,7 @@ const FindMe = () => {
             <div className='flex items-center justify-center lg:justify-start'>
               <FaMapMarkerAlt className="text-white text-4xl mb-2" />
             </div>
-            <h3 className="text-2xl font-bold">Visit Us</h3>
+            <h3 className="text-2xl font-bold">Studio Location</h3>
             <p className='text-white text-[12px]'>
               If you're in the area, feel free to reach out, I am located in <strong>Varna, Bulgaria</strong>. We welcome fans and collaborators alike!
             </p>
