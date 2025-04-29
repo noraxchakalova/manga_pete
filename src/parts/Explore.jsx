@@ -39,6 +39,7 @@ const Explore = () => {
           <a
             href="https://medibang.com/mpc/authors/26956722/"
             target="_blank"
+            onClick={handleSmoothScroll}
             rel="noopener noreferrer"
             className="px-6 py-3 bg-transparent border-2 border-white text-white font-medium rounded-md hover:bg-white hover:text-black transition-all duration-200"
           >
