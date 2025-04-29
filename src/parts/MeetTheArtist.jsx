@@ -16,14 +16,15 @@ const MeetTheArtist = () => {
       <div className="lg:w-1/2">
         <h2 className="text-4xl font-bold mb-4 text-left text-black">Meet the Artist</h2>
         <p className="mb-8 text-black text-left text-[18px]">
-          Discover the journey of Petar Chakarov, a passionate mangaka whose work is inspired by the rich tapestry of Japanese culture and storytelling. Explore the creative process that brings each manga to life.
+          Hi I'm up-and-coming manga artist!
+          Thank you so much if you read any of my works it means the world to me
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-black text-left text-[18px]">
           <div>
             <h3 className="text-2xl font-bold">
-              {inView && <CountUp end={10} duration={2} />} years
+              {inView && <CountUp end={5} duration={2} />} years
             </h3>
-            <p className='text-[14px]'>With over 5 years of experience, Chakarov has mastered the art of manga, blending traditional techniques with modern storytelling.</p>
+            <p className='text-[14px]'>With over 5 years of experience, I am constantly working to master the art of manga, blending traditional techniques with modern storytelling.</p>
           </div>
           <div>
             <h3 className="text-2xl font-bold">
