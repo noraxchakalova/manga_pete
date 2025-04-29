@@ -30,7 +30,7 @@ const MeetTheArtist = () => {
             <h3 className="text-2xl font-bold">
               {inView && <CountUp end={2} duration={2} />} mangas
             </h3>
-            <p className='text-[14px]'>Chakarov's portfolio features a diverse range of mangas, each telling unique stories that captivate and engage readers.</p>
+            <p className='text-[14px]'> I am still growing my portfolio, but I upload new chapters, oneshots and fanart frequently, so make sure to check regularly!</p>
           </div>
           <div>
             <h3 className="text-2xl font-bold">
