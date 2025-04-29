@@ -28,7 +28,7 @@ const MeetTheArtist = () => {
           </div>
           <div>
             <h3 className="text-2xl font-bold">
-              {inView && <CountUp end={50} duration={2} />} mangas
+              {inView && <CountUp end={2} duration={2} />} mangas
             </h3>
             <p className='text-[14px]'>Chakarov's portfolio features a diverse range of mangas, each telling unique stories that captivate and engage readers.</p>
           </div>
