@@ -25,7 +25,7 @@ const Explore = () => {
                                 View Portfolio 
                             </a>
                             <a
-                                href="/portfolio"
+                                href="https://medibang.com/mpc/authors/26956722/"
                                 className="flex border-1 border-white items-center justify-center gap-2 p-[10px_24px] rounded-[6px] bg-transparent text-white hover:bg-white hover:text-black font-medium transition-all duration-300 ease-in-out"
                                 onClick={handleSmoothScroll} 
                             >
