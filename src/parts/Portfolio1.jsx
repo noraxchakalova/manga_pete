@@ -24,9 +24,9 @@ const portfolioData = {
     {
       title: 'DanDaDan Tribute',
       genres: 'Fanart',
-      image: './dandadan,png',
+      image: './dandadan.png',
       link: '#',
-      tags: ['Naruto', 'Fanart'],
+      tags: ['DanDaDan', 'Fanart'],
     },
     {
       title: 'Cowboy Bebop Tribute',
